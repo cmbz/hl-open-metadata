@@ -45,7 +45,7 @@ def create_datafile_metadata(inventory_df, template):
     # Get the number of rows in the CSV
     num_files = len(df)
 
-    # Loop through through the file list and assemblage metadata
+    # Loop through through the file list and assemble metadata
     for row in df.iterrows():
         part = row[1].get('file_part')
         filename = row[1].get('filename')
